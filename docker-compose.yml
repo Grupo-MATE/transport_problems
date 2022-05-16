@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jupyter
+    environment:
+      - JUPYTER_TOKEN=admin
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/app
+
+
+
