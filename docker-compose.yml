@@ -10,7 +10,7 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - ./:/app
+      - ./Diego-Marvid/:/app/code
 
 
 
